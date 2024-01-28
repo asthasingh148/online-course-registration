@@ -14,10 +14,10 @@
     <!-- End Bootstrap CSS -->
 
         <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!--Custom Css-->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <!--End Custom Css-->
 </head>
 
@@ -56,10 +56,22 @@
                                 </div>
 
                                 <!-- Submit button -->
-                                <div class="col-md-12">
-                                    <button type="button" class="col-12 btn btn-primary btn-block mb-4">Sign
-                                        in</button>
-                                </div>
+                                <form id="registrationForm">
+                                    <!-- Your form fields go here -->
+                                    <input type="button" value="Submit" class="sub" id="submit" style="background-color: rgb(88, 140, 237); color: white;"  onclick="redirectToCoursesPage()">
+                                </form>
+                                
+                                
+                                
+                                <script>
+                                    function redirectToCoursesPage() {
+                                        alert("Login successful!");
+
+                                        // Redirect to the index HTML page
+                                        window.location.href = "index.html";
+                                        // Your form validation and submission logic go heres
+                                    }
+                                </script>
                                 <p class="text-center"> Don't have account yet?<a href="register.html" class="text-primary"> Sign up</a></p>
                             </form>
                         </div>
